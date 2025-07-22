@@ -22,95 +22,135 @@
       <strong>Some fields are missing</strong>
     </div>
 
-    <form class="row g-2 m-0 px-4 column-gap-3">
-      <div class="col-md-5">
-        <label for="inputcard#" class="form-label">Card #</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="XXXXXXXXXXXXXXXXX">
-      </div>
-      <div class="col-md-3">
-        <label for="inputCVC#" class="form-label">CVC #</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="0000">
-      </div>
-      <div class="col-md-4">
-        <label for="inputAmount" class="form-label">Amount</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Amount">
 
 
-      </div>
-      <div class="row g-2 m-0 px-4 column-gap-2">
-        <div class="col-md-6 ">
-          <label for="inputAddress" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+
+    <form class="row">
+      <div class="row ">
+        <div class="container flex-column">
+          <div class="col-md-5 m-0 px-3 ps-4">
+            <label for="inputcard#" class="form-label">Card #</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="XXXXXXXXXXXXXXXXX">
+
+
+            <div class="col-md-3">
+              <label for="inputCVC#" class="form-label">CVC #</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="0000">
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputAmount" class="form-label">Amount</label>
+              <div class="input-group-mb-3">
+                <div class="input-group mb-3">
+                  <span class="me-1">$</span>
+                  <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+      </div>
+
+
+
+
+      <div class="container flex-column mb-3 ">
+        <div class="row px-4">
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Pick a state</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Postal Code</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-
-      <div class="col-md-3 ">
-        <label for="inputAddress" class="form-label">We accept:</label>
-        <br>
-        <button type="button" class="btn btn-secondary " data-bs-container="body" data-bs-toggle="popover"
-          data-bs-content="Top popover" data-bs-placement="top">
 
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+      <div class="container flex-column mb-3">
+        <div class="row px-4">
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-google-pay"></i></label>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Pick a state</option>
+              <option>...</option>
+            </select>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="inputZip">
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-            <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex"></i></label>
-          </div>
-
+        </div>
       </div>
 
-      <div class="container flex-column col-md-6 g-2 align-items-end">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        <p>Add any notes here</p>
-      </div>
+
+
+
+      <div class="container flex-column mb-3">
+        <div class="row px-4">
+          <div class="col-md-6 ">
+            <label for="inputAddress" class="form-label">We accept:</label>
+            <br>
+            <button type="button" class="btn btn-secondary " data-bs-container="body" data-bs-toggle="popover"
+              data-bs-content="Top popover" data-bs-placement="top">
+
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-google-pay"></i></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3">
+                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                  value="option4">
+                <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex"></i></label>
+              </div>
+
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="flex-column align-items-end pe-10">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <p>Add any notes here</p>
+            </div>
+          </div>
+        </div>
 
     </form>
-    <header>
-      <div>
 
-        <div class=" container flex-column p-3">
-          <div class="col">
-            <button type="button" class="btn btn-secondary">cancel</button>
-            <button type="button" class="btn btn-primary">send</button>
-
-          </div>
-        </div>
-
+    <div class="card-footer">
+      <div class="col flex-column m-2 align-items-end text-end pe-4 mb-0">
+        <button type="button" class="btn btn-secondary">cancel</button>
+        <button type="button" class="btn btn-primary">send</button>
 
       </div>
-    </header>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+
+
   </div>
 
 
@@ -134,14 +174,6 @@
       font-size: 20px;
     }
 
-    header {
-      background-color: rgb(239, 238, 238);
-      border: black;
-      align-items: end;
-      display: flex;
-      flex-direction: row-reverse;
-      padding-right: 20px;
-    }
 
     .placeholder {
       color: rgb(182, 62, 62);
